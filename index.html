@@ -34,9 +34,7 @@
     }
 
     /* Progress bar */
-    .progress-wrap {
-      margin-bottom: 28px;
-    }
+    .progress-wrap { margin-bottom: 28px; }
     .progress-label {
       display: flex;
       justify-content: space-between;
@@ -60,132 +58,61 @@
     }
 
     /* Header */
-    .quiz-header {
-      text-align: center;
-      margin-bottom: 32px;
-    }
-    .quiz-header .icon {
-      font-size: 2.6rem;
-      margin-bottom: 10px;
-      display: block;
-    }
+    .quiz-header { text-align: center; margin-bottom: 32px; }
+    .quiz-header .icon { font-size: 2.6rem; margin-bottom: 10px; display: block; }
     .quiz-header h1 {
-      font-size: 1.55rem;
-      font-weight: 700;
-      color: #1e3a56;
-      line-height: 1.3;
-      margin-bottom: 8px;
+      font-size: 1.55rem; font-weight: 700; color: #1e3a56; line-height: 1.3; margin-bottom: 8px;
     }
-    .quiz-header p {
-      font-size: 0.92rem;
-      color: #6a96b8;
-      line-height: 1.6;
-    }
+    .quiz-header p { font-size: 0.92rem; color: #6a96b8; line-height: 1.6; }
 
     /* Question */
     .question-number {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #7aa8cc;
-      margin-bottom: 8px;
+      font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.08em; color: #7aa8cc; margin-bottom: 8px;
     }
     .question-text {
-      font-size: 1.15rem;
-      font-weight: 600;
-      color: #1e3a56;
-      line-height: 1.45;
-      margin-bottom: 22px;
+      font-size: 1.15rem; font-weight: 600; color: #1e3a56; line-height: 1.45; margin-bottom: 22px;
     }
 
     /* Options */
-    .options {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+    .options { display: flex; flex-direction: column; gap: 10px; }
     .option {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 14px 18px;
-      border: 2px solid #d4eaf7;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      font-size: 0.95rem;
-      color: #2c4a6e;
-      background: #f7fbff;
-      user-select: none;
+      display: flex; align-items: center; gap: 12px; padding: 14px 18px;
+      border: 2px solid #d4eaf7; border-radius: 12px; cursor: pointer;
+      transition: all 0.2s ease; font-size: 0.95rem; color: #2c4a6e;
+      background: #f7fbff; user-select: none;
     }
-    .option:hover {
-      border-color: #5ba8d4;
-      background: #eaf5fb;
-      transform: translateX(3px);
-    }
+    .option:hover { border-color: #5ba8d4; background: #eaf5fb; transform: translateX(3px); }
     .option.selected {
-      border-color: #3d8fc0;
-      background: #daeef9;
-      color: #1e3a56;
-      font-weight: 600;
+      border-color: #3d8fc0; background: #daeef9; color: #1e3a56; font-weight: 600;
     }
     .option-dot {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      border: 2px solid #9fc8e0;
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: 20px; height: 20px; border-radius: 50%; border: 2px solid #9fc8e0;
+      flex-shrink: 0; display: flex; align-items: center; justify-content: center;
       transition: all 0.2s ease;
     }
-    .option.selected .option-dot {
-      background: #3d8fc0;
-      border-color: #3d8fc0;
-    }
+    .option.selected .option-dot { background: #3d8fc0; border-color: #3d8fc0; }
     .option.selected .option-dot::after {
-      content: '';
-      width: 8px;
-      height: 8px;
-      background: #fff;
-      border-radius: 50%;
-      display: block;
+      content: ''; width: 8px; height: 8px; background: #fff; border-radius: 50%; display: block;
     }
 
     /* Next button */
     .btn-next {
-      margin-top: 26px;
-      width: 100%;
-      padding: 15px;
+      margin-top: 26px; width: 100%; padding: 15px;
       background: linear-gradient(135deg, #5ba8d4, #3478a8);
-      color: #fff;
-      border: none;
-      border-radius: 12px;
-      font-size: 1rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      letter-spacing: 0.02em;
+      color: #fff; border: none; border-radius: 12px; font-size: 1rem;
+      font-weight: 600; cursor: pointer; transition: all 0.2s ease; letter-spacing: 0.02em;
     }
-    .btn-next:disabled {
-      opacity: 0.4;
-      cursor: not-allowed;
-      transform: none;
-    }
+    .btn-next:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
     .btn-next:not(:disabled):hover {
       background: linear-gradient(135deg, #4a97c3, #2a6897);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(61, 143, 192, 0.35);
+      transform: translateY(-2px); box-shadow: 0 6px 20px rgba(61, 143, 192, 0.35);
     }
 
     /* Results screen */
     .results { text-align: center; }
     .results .result-icon {
-      font-size: 3.2rem;
-      display: block;
-      margin-bottom: 16px;
+      font-size: 3.2rem; display: block; margin-bottom: 16px;
       animation: pulse 1.8s ease-in-out infinite;
     }
     @keyframes pulse {
@@ -193,88 +120,97 @@
       50%       { transform: scale(1.08); }
     }
     .results h2 {
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: #1e3a56;
-      line-height: 1.4;
-      margin-bottom: 14px;
+      font-size: 1.4rem; font-weight: 700; color: #1e3a56; line-height: 1.4; margin-bottom: 14px;
     }
     .results .verdict {
       background: linear-gradient(135deg, #fff3cd, #fff8e6);
-      border-left: 4px solid #f0a500;
-      border-radius: 10px;
-      padding: 16px 18px;
-      font-size: 0.97rem;
-      color: #5a4010;
-      line-height: 1.6;
-      text-align: left;
-      margin-bottom: 20px;
+      border-left: 4px solid #f0a500; border-radius: 10px;
+      padding: 16px 18px; font-size: 0.97rem; color: #5a4010; line-height: 1.6;
+      text-align: left; margin-bottom: 20px;
     }
     .results .verdict strong {
-      display: block;
-      margin-bottom: 4px;
-      font-size: 1rem;
-      color: #3d2800;
+      display: block; margin-bottom: 4px; font-size: 1rem; color: #3d2800;
     }
-    .results .tips {
+
+    /* Biological Why section */
+    .bio-why {
       background: #f0f8ff;
       border-radius: 12px;
-      padding: 16px 18px;
+      padding: 18px 20px;
+      text-align: left;
+      margin-bottom: 20px;
+      border-left: 4px solid #5ba8d4;
+    }
+    .bio-why .section-title {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.82rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; color: #3d8fc0; margin-bottom: 10px;
+    }
+    .bio-why p {
+      font-size: 0.91rem; color: #3a6080; line-height: 1.7;
+    }
+
+    /* 30-Day Protocol section */
+    .protocol {
+      background: #f7fff4;
+      border-radius: 12px;
+      padding: 18px 20px;
       text-align: left;
       margin-bottom: 24px;
-      font-size: 0.88rem;
-      color: #4a7a9b;
-      line-height: 1.7;
+      border-left: 4px solid #3cb371;
     }
-    .results .tips ul {
-      padding-left: 18px;
+    .protocol .section-title {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.82rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; color: #2e8b57; margin-bottom: 12px;
     }
-    .results .tips ul li {
-      margin-bottom: 4px;
+    .protocol-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
     }
+    .protocol-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 0.91rem; color: #2c5040; line-height: 1.5;
+    }
+    .protocol-list li .badge {
+      flex-shrink: 0;
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.05em;
+      padding: 2px 7px; border-radius: 99px; margin-top: 2px;
+    }
+    .badge-free { background: #d4f0de; color: #1a6b3a; }
+    .badge-tool { background: #ffe0b2; color: #b34700; }
+    .protocol-list li .tool-link {
+      color: #b34700; font-weight: 700; text-decoration: underline; cursor: pointer;
+    }
+
+    /* CTA button */
     .btn-cta {
-      display: block;
-      width: 100%;
-      padding: 18px 20px;
-      background: linear-gradient(135deg, #ff8c42, #f96a00);
-      color: #fff;
-      border: none;
-      border-radius: 14px;
-      font-size: 1.08rem;
-      font-weight: 800;
-      text-decoration: none;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      letter-spacing: 0.02em;
-      line-height: 1.3;
-      box-shadow: 0 6px 28px rgba(249, 106, 0, 0.45);
-      text-shadow: 0 1px 2px rgba(0,0,0,0.15);
-      outline: 3px solid #fff;
-      outline-offset: -6px;
+      display: block; width: 100%; padding: 20px 20px;
+      background: linear-gradient(135deg, #ff6b2b, #e84400);
+      color: #fff; border: none; border-radius: 16px;
+      font-size: 1.18rem; font-weight: 800; text-decoration: none;
+      cursor: pointer; transition: all 0.2s ease; letter-spacing: 0.01em;
+      line-height: 1.3; box-shadow: 0 8px 32px rgba(232, 68, 0, 0.5);
+      text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+      outline: 3px solid rgba(255,255,255,0.4); outline-offset: -6px;
+      margin-bottom: 8px;
     }
     .btn-cta:hover {
-      background: linear-gradient(135deg, #ff9f5e, #e85e00);
+      background: linear-gradient(135deg, #ff7d42, #d93d00);
       transform: translateY(-3px);
-      box-shadow: 0 12px 36px rgba(249, 106, 0, 0.55);
+      box-shadow: 0 14px 40px rgba(232, 68, 0, 0.6);
     }
     .btn-cta span {
-      display: block;
-      font-size: 0.75rem;
-      font-weight: 400;
-      opacity: 0.88;
-      margin-top: 3px;
+      display: block; font-size: 0.77rem; font-weight: 400; opacity: 0.9; margin-top: 4px;
     }
+
     .retake {
-      margin-top: 16px;
-      font-size: 0.82rem;
-      color: #9fc8e0;
-      cursor: pointer;
-      text-decoration: underline;
-      background: none;
-      border: none;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      margin-top: 16px; font-size: 0.82rem; color: #9fc8e0; cursor: pointer;
+      text-decoration: underline; background: none; border: none;
+      display: block; margin-left: auto; margin-right: auto;
     }
     .retake:hover { color: #5ba8d4; }
 
@@ -282,38 +218,24 @@
     .intro { text-align: center; }
     .intro .icon { font-size: 3rem; display: block; margin-bottom: 14px; }
     .intro h1 {
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: #1e3a56;
-      margin-bottom: 12px;
-      line-height: 1.3;
+      font-size: 1.6rem; font-weight: 700; color: #1e3a56; margin-bottom: 12px; line-height: 1.3;
     }
     .intro p {
-      font-size: 0.95rem;
-      color: #6a96b8;
-      line-height: 1.7;
-      margin-bottom: 28px;
+      font-size: 0.95rem; color: #6a96b8; line-height: 1.7; margin-bottom: 28px;
     }
     .intro .meta {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-bottom: 28px;
-      flex-wrap: wrap;
+      display: flex; justify-content: center; gap: 20px; margin-bottom: 28px; flex-wrap: wrap;
     }
     .intro .meta-item {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.82rem;
-      color: #7aa8cc;
-      font-weight: 500;
+      display: flex; align-items: center; gap: 6px;
+      font-size: 0.82rem; color: #7aa8cc; font-weight: 500;
     }
 
     @media (max-width: 480px) {
       .card { padding: 28px 20px; }
       .quiz-header h1, .intro h1 { font-size: 1.35rem; }
       .question-text { font-size: 1.05rem; }
+      .btn-cta { font-size: 1.05rem; padding: 18px 14px; }
     }
   </style>
 </head>
@@ -330,7 +252,8 @@
         "A few times a week",
         "Occasionally",
         "Rarely or never"
-      ]
+      ],
+      scores: [0, 1, 2, 3]
     },
     {
       q: "What is your primary sleeping position?",
@@ -339,7 +262,8 @@
         "On my side",
         "On my back",
         "I switch positions constantly"
-      ]
+      ],
+      scores: [0, 2, 3, 1]
     },
     {
       q: "How old is your current pillow?",
@@ -348,7 +272,8 @@
         "1–3 years old",
         "Less than 1 year",
         "I'm not sure"
-      ]
+      ],
+      scores: [0, 2, 3, 1]
     },
     {
       q: "Do you experience headaches or shoulder tension when you wake up?",
@@ -357,7 +282,8 @@
         "Yes, sometimes",
         "Rarely",
         "No, never"
-      ]
+      ],
+      scores: [0, 1, 2, 3]
     },
     {
       q: "How would you describe your sleep quality overall?",
@@ -366,15 +292,87 @@
         "Fair — some nights are better than others",
         "Good — but I know it could be better",
         "Great — I just want to optimise further"
+      ],
+      scores: [0, 1, 2, 3]
+    }
+  ];
+
+  const AFFILIATE_LINK = "https://bit.ly/4dBZAfA";
+
+  const results = [
+    // Score 0–4: Wired & Tired
+    {
+      icon: "⚡",
+      name: "Wired & Tired",
+      tagline: "You're exhausted — but your brain won't switch off.",
+      verdict: "Your body is caught in a cortisol-melatonin war every night. The physical discomfort from your pillow is sending constant low-level stress signals to your nervous system, keeping your fight-or-flight response active at exactly the wrong time.",
+      bioWhy: "Your adrenal system is producing elevated cortisol well into the evening — and cortisol directly suppresses melatonin production. These two hormones are in biological opposition: you can't wind down while cortisol is elevated. On top of this, poor cervical alignment from your pillow sends micro-pain signals to your brainstem throughout the night, triggering repeated arousal responses that prevent you from entering the deep, restorative sleep stages. The result is a vicious cycle: the more disrupted your sleep, the higher your next-day cortisol — and the harder the next night becomes.",
+      protocol: [
+        { free: true,  text: "10-minute walk after dinner — lowers evening cortisol by ~25% and accelerates the natural melatonin rise" },
+        { free: true,  text: "Blue light block 90 mins before bed — screens suppress melatonin production by up to 50%; dim all screens or use blue light glasses" },
+        { free: true,  text: "4-7-8 breathing at lights-out — inhale 4 sec, hold 7 sec, exhale 8 sec; directly activates the parasympathetic nervous system to override the cortisol response" },
+        { free: false, text: "Orthopedic contour pillow — eliminates the cervical micro-pain signals keeping your nervous system on high alert all night", link: AFFILIATE_LINK }
+      ]
+    },
+    // Score 5–8: 3 AM Fragmenter
+    {
+      icon: "🌙",
+      name: "3 AM Fragmenter",
+      tagline: "You fall asleep fine — but something wakes you in the small hours.",
+      verdict: "Your sleep onset is healthy, but your sleep architecture is fracturing mid-cycle. Something — physical, thermal, or hormonal — is pulling you into full wakefulness at the most vulnerable point of the night.",
+      bioWhy: "Around the 3–4am mark, your body naturally shifts from deep NREM sleep into a lighter REM sleep phase. This transition is a biological pinch point: the brain briefly reduces its arousal threshold, making you vulnerable to any physical or environmental trigger. Cervical misalignment from an unsupportive pillow creates enough ongoing discomfort to exploit this window — causing a partial arousal that becomes a full wake-up. This triggers a cortisol micro-spike that makes returning to deep sleep nearly impossible, even if you manage to fall back asleep. Over time, this consistently fragments the REM sleep responsible for memory consolidation and emotional regulation.",
+      protocol: [
+        { free: true,  text: "Set room temperature to 65–68°F (18–20°C) — your core body temperature must drop 1–2°F to stay in deep sleep; a warm room prevents this" },
+        { free: true,  text: "No liquids 2 hours before bed — a partial bladder creates low-level physical signals that are enough to trigger waking during the light-sleep transition window" },
+        { free: true,  text: "Consistent wake time (even weekends) — anchors your circadian rhythm and deepens the 3–4am sleep stage so minor triggers can't pull you out" },
+        { free: false, text: "Contour memory foam pillow — eliminates cervical pressure that exploits the 3am arousal window; the most common physical cause of mid-night waking", link: AFFILIATE_LINK }
+      ]
+    },
+    // Score 9–11: Morning Zombie
+    {
+      icon: "🧟",
+      name: "Morning Zombie",
+      tagline: "You're getting the hours — but waking up feeling worse than when you went to bed.",
+      verdict: "Duration isn't the problem. Depth is. You're spending time in bed without cycling properly through the restorative stages — particularly slow-wave sleep — where the real overnight repair happens.",
+      bioWhy: "Slow-wave sleep (SWS) — also called deep sleep or Stage 3 NREM — is when your body releases 70–80% of its daily human growth hormone, your brain's glymphatic system flushes out neurotoxic waste (including amyloid plaques linked to cognitive decline), and cellular repair peaks. Even low-level cervical tension from poor pillow support sends faint arousal signals to the brainstem throughout the night. You never fully wake, but these micro-arousals repeatedly pull you out of SWS — reducing your total deep sleep time by 30–60 minutes per night without you knowing. The result: 7–8 hours in bed that feel like 5, because the hours aren't spent in the right sleep stages.",
+      protocol: [
+        { free: true,  text: "Lock in a consistent wake time — the single most powerful lever for increasing slow-wave sleep; irregular wake times shorten deep sleep duration significantly" },
+        { free: true,  text: "Magnesium glycinate 300–400mg, 30 mins before bed — one of the best-evidenced sleep supplements; shown in multiple RCTs to increase slow-wave sleep duration" },
+        { free: true,  text: "Cold water face splash immediately on waking — triggers a cortisol spike that fully clears sleep inertia within 2 minutes instead of the usual 30–90 minute fog" },
+        { free: false, text: "Adjustable orthopedic pillow — correct loft eliminates the overnight micro-arousals that are robbing you of slow-wave sleep; the fix most morning zombies never think to try", link: AFFILIATE_LINK }
+      ]
+    },
+    // Score 12–15: Peak Performer
+    {
+      icon: "🏆",
+      name: "Peak Performer",
+      tagline: "Your foundations are solid. Now let's fine-tune for elite-level recovery.",
+      verdict: "You're sleeping better than most people — but you're still leaving 15–20% of your restorative potential on the table. At your level, the gains are found in cycle optimization, not basic fixes.",
+      bioWhy: "Even high-quality sleepers experience subtle cervical misalignment that costs them 30–45 minutes of deep sleep per night without it registering as a problem. At the Peak Performer level, the biology of sleep becomes a precision sport: slow-wave sleep drives human growth hormone secretion and synaptic pruning; REM sleep drives emotional regulation, pattern recognition, and creative insight. A pillow that's even slightly mismatched to your shoulder width and sleep position creates micro-tension that marginally elevates brainstem arousal thresholds — reducing time in the most valuable sleep stages. The difference between good sleep and elite sleep is often nothing more dramatic than getting the loft and contouring exactly right.",
+      protocol: [
+        { free: true,  text: "Track your sleep with Sleep Cycle or Pillow app (free tier) — find your personal optimal bedtime by identifying when your sleep score peaks across the week" },
+        { free: true,  text: "10 minutes of natural light within 30 mins of waking — the most reliable way to sharpen your circadian anchor, improving deep sleep timing and duration by 15–20%" },
+        { free: true,  text: "Evening 'brain dump' — write tomorrow's tasks before bed; reduces pre-sleep cognitive arousal and measurably shortens sleep-onset time in office workers" },
+        { free: false, text: "Precision-fit orthopedic pillow — fine-tune cervical support to unlock the final 15–20% of deep and REM sleep you're currently leaving behind", link: AFFILIATE_LINK }
       ]
     }
   ];
 
-  let current = -1; // -1 = intro
+  let current = -1;
   let selected = null;
   let answers = [];
 
   const app = document.getElementById('app');
+
+  function getResult() {
+    const total = answers.reduce(function(sum, answerIdx, qIdx) {
+      return sum + questions[qIdx].scores[answerIdx];
+    }, 0);
+    if (total <= 4)  return results[0]; // Wired & Tired
+    if (total <= 8)  return results[1]; // 3 AM Fragmenter
+    if (total <= 11) return results[2]; // Morning Zombie
+    return results[3];                  // Peak Performer
+  }
 
   function render() {
     if (current === -1) return renderIntro();
@@ -399,8 +397,8 @@
   }
 
   function renderQuestion() {
-    const q = questions[current];
-    const progress = ((current) / questions.length) * 100;
+    var q = questions[current];
+    var progress = (current / questions.length) * 100;
 
     app.innerHTML = `
       <div class="progress-wrap">
@@ -415,12 +413,12 @@
       <div class="question-number">Question ${current + 1}</div>
       <div class="question-text">${q.q}</div>
       <div class="options" id="options">
-        ${q.options.map((opt, i) => `
-          <div class="option${selected === i ? ' selected' : ''}" onclick="selectOption(${i})">
+        ${q.options.map(function(opt, i) {
+          return `<div class="option${selected === i ? ' selected' : ''}" onclick="selectOption(${i})">
             <div class="option-dot"></div>
             ${opt}
-          </div>
-        `).join('')}
+          </div>`;
+        }).join('')}
       </div>
       <button class="btn-next" id="nextBtn" ${selected === null ? 'disabled' : ''} onclick="nextQuestion()">
         ${current === questions.length - 1 ? 'See My Results →' : 'Next Question →'}
@@ -429,27 +427,48 @@
   }
 
   function renderResults() {
+    var r = getResult();
+
+    var protocolItems = r.protocol.map(function(item) {
+      if (item.free) {
+        return `<li>
+          <span class="badge badge-free">FREE</span>
+          <span>${item.text}</span>
+        </li>`;
+      } else {
+        return `<li>
+          <span class="badge badge-tool">TOOL</span>
+          <span>${item.text} — <a class="tool-link" href="${item.link}" target="_blank" rel="noopener">get it here</a></span>
+        </li>`;
+      }
+    }).join('');
+
     app.innerHTML = `
       <div class="results">
-        <span class="result-icon">😴</span>
-        <h2>Your Sleep Quality Assessment</h2>
+        <span class="result-icon">${r.icon}</span>
+        <h2>You're a: <em>${r.name}</em></h2>
         <div class="verdict">
-          <strong>Your Result: Pillow Misalignment Detected</strong>
-          Based on your answers, your current pillow is likely failing your neck alignment — contributing to the pain, stiffness, and broken sleep you're experiencing.
+          <strong>${r.tagline}</strong>
+          ${r.verdict}
         </div>
-        <div class="tips">
-          <strong style="color:#2c4a6e; font-size:0.9rem; display:block; margin-bottom:8px;">What this means for you:</strong>
-          <ul>
-            <li>Your cervical spine isn't being properly supported overnight</li>
-            <li>Micro-pain signals may be fragmenting your deep sleep cycles</li>
-            <li>Morning stiffness &amp; headaches are a direct result of poor pillow support</li>
-            <li>An orthopedic pillow could resolve this in as little as 1–2 weeks</li>
+
+        <div class="bio-why">
+          <div class="section-title">🔬 The Biological Why</div>
+          <p>${r.bioWhy}</p>
+        </div>
+
+        <div class="protocol">
+          <div class="section-title">📋 Your 30-Day Protocol</div>
+          <ul class="protocol-list">
+            ${protocolItems}
           </ul>
         </div>
-        <a class="btn-cta" href="https://bit.ly/4dBZAfA" target="_blank" rel="noopener">
-          Get My Recommended Orthopaedic Pillow
-          <span>Trusted by thousands — free shipping available</span>
+
+        <a class="btn-cta" href="${r.protocol[3].link}" target="_blank" rel="noopener">
+          Optimise My ${r.name} Now
+          <span>Join thousands already sleeping better — free shipping available</span>
         </a>
+
         <button class="retake" onclick="retake()">Retake the quiz</button>
       </div>
     `;
